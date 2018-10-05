@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trivia</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src='https://code.jquery.com/jquery-3.3.1.min.js' integrity='sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8='
+        crossorigin='anonymous'></script>
+    <script src="assets/javascript/app.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <h1>Trivia</h1>
+
+    <div>
+        <p id="question">Welcome to my trivia game. Click button below to begin!</p>
+        <button id="startButton">Start</button>
+
+        <br>
+
+        <p>
+            <button id="answer_1" class="answer"><label id="label_answer_1"></button>
+        </p>
+
+        <p>
+            <button id="answer_2" class="answer"><label id="label_answer_2"></button>
+        </p>
+
+        <p>
+            <button id="answer_3" class="answer"><label id="label_answer_3"></button>
+        </p>
+
+        <p>
+            <button id="answer_4" class="answer"><label id="label_answer_4"></button>
+        </p>
+
+        <br>
+
+    </div>
+
+    <div id="timer_box">
+        <p>
+            Time Remaining: <span id="timer"></span>
+        </p>
+    </div>
+
+    <div id="correct_box">
+        <p>Correct: <span id="correct_total"></span></p>
+    </div>
+
+    <div id="incorrect_box">
+        <p>Incorrect: <span id="incorrect_total"></span></p>
+    </div>
+
+    <div id="correct_message" class="modal">
+        <div class="modal-content">
+            <p>Correct!</p>
+        </div>
+    </div>
+
+    <div id="times_up_message" class="modal">
+        <div class="modal-content">
+            <p>Times up!</p>
+        </div>
+    </div>
+
+    <div id="incorrect_answer_message" class="modal">
+        <div class="modal-content">
+            <p>The correct answer was: <span id="correct_answer_was"></span></p>
+        </div>
+    </div>
+
+    <div id="results" class="modal">
+        <div class="modal-content">
+            <p>Total Score: </p>
+            <p>Correct: <span id="correct_results"></span></p>
+            <p>Incorrect: <span id="incorrect_results"></span></p>
+        </div>
+    </div>
+
+</body>
+
+</html>
